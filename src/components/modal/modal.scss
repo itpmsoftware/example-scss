@@ -1,0 +1,53 @@
+@media (min-width: 320px) {
+    .modal-contenido {
+        width: 200px;
+        padding: 1.5rem;
+        margin: 30% auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-contenido {
+        width: 300px;
+        padding: 2rem;
+        margin: 15% auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    .modal-contenido {
+        width: 300px;
+        padding: 2rem;
+        margin: 15% auto;
+    }
+}
+
+.modal-contenido {
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 8px;
+    size: 14px;
+    text-align: center;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-contenido img {
+    width: 4rem;
+    height: 4rem;
+}

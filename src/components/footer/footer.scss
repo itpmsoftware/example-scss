@@ -1,0 +1,143 @@
+@import "../../style/global.scss";
+.footer-serempre {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: $background-grey-serempre;
+    border: 1px solid $border-color-serempre;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+
+.card-total-serempre {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card-serempre-info {
+    max-height: 72px;
+    border-radius: $border-radius;
+}
+
+.card-serempre-info p {
+    font-size: 14px;
+    color: $title-color;
+    font-weight: 500;
+    line-height: 1.714;
+    text-align: left;
+    margin: 0;
+    vertical-align: text-top;
+    width: -webkit-fill-available;
+}
+
+.card-serempre-info span {
+    font-size: 14px;
+    width: 100%;
+    color: $color-span;
+    font-weight: 400;
+    line-height: 1.429;
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.card-serempre-info h2 {
+    margin: 0;
+    text-align: right;
+    font-size: 27.65px;
+    color: $title-color;
+    font-weight: 700;
+    line-height: 1.157;
+    vertical-align: text-top;
+}
+
+.col-data {
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.always-show {
+    display: block !important;
+}
+
+@media (min-width: 320px) {
+    .always-show {
+        text-align: end;
+        margin-bottom: 1rem;
+    }
+    .card-total-serempre {
+        display: block;
+        text-align: end;
+    }
+    .footer-serempre {
+        height: 182px;
+        padding-left: 0.5rem;
+    }
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        width: 296px;
+    }
+    .card-serempre-info p {
+        display: none;
+    }
+    .card-serempre-info span {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-serempre {
+        height: 112px;
+        padding-left: 3.8rem;
+    }
+    .always-show {
+        margin-bottom: 0;
+    }
+    .card-total-serempre {
+        display: flex;
+    }
+    .container-footer {
+        width: 764px;
+    }
+    .card-serempre-info p {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    .card-serempre-info span {
+        display: none;
+    }
+    .col-data {
+        display: block;
+    }
+}
+
+@media (min-width: 1280px) {
+    .footer-serempre {
+        height: 152px;
+        padding-left: 3.8rem;
+    }
+    .card-serempre-info p {
+        display: block;
+        margin-bottom: 0;
+    }
+    .card-serempre-info span {
+        display: block;
+        max-width: 248px;
+    }
+    .container-footer {
+        width: 1140px;
+    }
+    .col-data {
+        display: flex;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer-serempre {
+        padding-left: 13.2rem;
+    }
+}

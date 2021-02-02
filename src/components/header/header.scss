@@ -1,0 +1,20 @@
+.header-serempre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+@media (min-width: 320px) {
+    .header-serempre img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-serempre img {
+        height: 58px;
+        width: 58px;
+    }
+}

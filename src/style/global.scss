@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Circular Std Medium";
+    src: url("http://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot");
+    /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.svg#Circular Std Medium") format("svg");
+    /* iOS 4.1- */
+}
+
+$background-grey-serempre: #F5F5F7;
+$border-color-serempre: #D2D2D7;
+$border-radius: 0.5rem;
+$background: #FFFFFF;
+$title-color: #111111;
+$color-span: #6B7280;
+$color-border: #EEEFF2;
+$color-icon: #000000;
+$color-hover: #B6BCC6;
+$color-select: #1E96D4;
+$color-hover-button: #66BEEB;
+$color-focus: #D8DCE0;
+$color-red: #CB253C;
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.mb-5 {
+    margin-bottom: 48px;
+}
+
+.mb-2 {
+    margin-bottom: 12px;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.is-invalid {
+    color: $color-red;
+    display: block;
+}
+
+@media (min-width: 320px) {
+    .col-50 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .row {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-50 {
+        display: block;
+        max-width: 100%;
+    }
+    .row {
+        display: block;
+    }
+}
+
+@media (min-width: 1280px) {
+    .col-50 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 39%;
+        flex: 0 0 39%;
+        max-width: 39%;
+    }
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: calc(100% - 0.25rem);
+        justify-content: space-between;
+    }
+}

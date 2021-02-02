@@ -1,0 +1,124 @@
+@import "../../style/global.scss";
+.container {
+    font-family: "Circular Std Medium";
+    background-color: $background;
+    width: 100%;
+    padding-right: 7rem;
+    padding-left: 7rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: $color-border;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100% - 0.25rem);
+    justify-content: space-between;
+}
+
+.card-serempre {
+    max-height: 72px;
+    padding: 24px;
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-serempre p {
+    font-size: 14px;
+    color: $title-color;
+    font-weight: 500;
+    line-height: 1.429;
+    text-align: left;
+    margin: 0;
+    vertical-align: text-top;
+    width: -webkit-fill-available;
+}
+
+.card-serempre span {
+    font-size: 14px;
+    color: $color-span;
+    font-weight: 400;
+    line-height: 1.429;
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.card-serempre:hover {
+    border: 2px solid $color-hover;
+    cursor: pointer;
+}
+
+.card-serempre:focus {
+    outline: none;
+    box-shadow: 0 0 3px $color-focus;
+}
+
+.buy-now {
+    font-size: 16px;
+    color: $background;
+    background-color: $color-select;
+    border: none;
+    height: 48px;
+    width: 105px;
+    border-radius: $border-radius;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: text-top;
+    margin-left: 2rem;
+}
+
+.buy-now:hover {
+    background-color: $color-hover-button;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now:focus {
+    outline: none;
+    box-shadow: 0 0 3px $color-focus !important;
+}
+
+@media (min-width: 320px) {
+    .container {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        max-width: 300px;
+    }
+    .body-serempre {
+        min-height: calc(100vw + 2700px);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 960px;
+    }
+    .body-serempre {
+        min-height: calc(100vw + 1900px);
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1140px;
+    }
+    .body-serempre {
+        min-height: calc(100vw + 600px);
+    }
+}
+
+@media (min-width: 1440px) {
+    .body-serempre {
+        min-height: calc(100vw + 350px);
+    }
+}
